@@ -1,9 +1,11 @@
+import os
+os.environ["OPENCV_VIDEOIO_PRIORITY_BACKEND"] = "0"
+
 import streamlit as st
 import cv2
 import numpy as np
 import tempfile
 import json
-import os
 from datetime import datetime
 from ultralytics import YOLO
 from collections import defaultdict
